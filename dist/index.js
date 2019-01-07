@@ -27,7 +27,10 @@ function createI18NextProxy() {
     var NextProxy = nextProxy.value,
         next = nextProxy.next;
     var i18nOptions = props.fixture.i18nOptions || {
-      fallbackLng: 'en'
+      fallbackLng: 'en',
+      react: {
+        wait: true
+      }
     };
 
     var i18nInstance = _i18next.default.init(i18nOptions);

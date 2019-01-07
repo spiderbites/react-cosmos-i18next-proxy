@@ -7,7 +7,12 @@ export default function createI18NextProxy () {
     const { nextProxy, ...rest } = props
     const { value: NextProxy, next } = nextProxy
 
-    const i18nOptions = props.fixture.i18nOptions || { fallbackLng: 'en' }
+    const i18nOptions = props.fixture.i18nOptions || {
+      fallbackLng: 'en',
+      react: {
+        wait: true
+      }
+    }
     const i18nInstance = i18n.init(i18nOptions)
 
     return (
