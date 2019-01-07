@@ -2,9 +2,9 @@
   "name": "react-cosmos-i18next-proxy",
   "version": "0.0.1",
   "description": "Mock i18next via fixtures",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production babel index.js -o dist/index.js",
+    "build": "NODE_ENV=production babel src/index.js -o dist/index.js",
     "prepare": "npm run build"
   },
   "repository": {
