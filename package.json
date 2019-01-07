@@ -1,0 +1,37 @@
+{
+  "name": "react-cosmos-i18next-proxy",
+  "version": "0.0.1",
+  "description": "Mock i18next via fixtures",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production babel index.js -o dist/index.js",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiderbites/react-cosmos-i18next-proxy.git"
+  },
+  "keywords": [
+    "react-cosmos",
+    "i18next"
+  ],
+  "author": "spiderbites",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spiderbites/react-cosmos-i18next-proxy/issues"
+  },
+  "homepage": "https://github.com/spiderbites/react-cosmos-i18next-proxy#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "react-cosmos-shared": "^4.6.1"
+  },
+  "dependencies": {
+    "i18next": "^13.1.0",
+    "react": "^16.7.0",
+    "react-i18next": "^9.0.2"
+  }
+}
